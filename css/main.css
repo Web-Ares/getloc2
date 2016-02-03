@@ -82,6 +82,7 @@ input[type="search"]::-webkit-search-cancel-button {
     text-align: left;
 }
 .site__subtitle{
+    order: 2;
     margin: 28px 0 31px;
     font-size: 17px;
     font-weight: 300;
@@ -940,11 +941,17 @@ div.statistic__line-04{
 /* --------------- /translation --------------- */
 
 /* --------------- language__item --------------- */
+.language__wrap{
+    display: flex;
+    flex-flow: row wrap;
+}
 .language__item{
     position: relative;
     padding: 20px 0 23px 18px;
     border-radius: 5px;
     border: 1px solid #e6e6e6;
+    transition: transform .3s ease;
+    -webkit-transition: transform .3s ease;
 }
 .language__control{
     margin-bottom: 17px;
@@ -970,8 +977,13 @@ div.statistic__line-04{
     width: 442px;
     margin-top: 4px;
 }
-.language__inactive{
+.language_inactive{
+    order: 3;
     opacity: .6;
+}
+.language__animate{
+    transform: scale(0);
+    -webkit-transform: scale(0);
 }
 /* --------------- /language__item --------------- */
 

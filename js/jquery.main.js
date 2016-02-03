@@ -24,10 +24,24 @@ $(function(){
                 $(this).removeClass('btn-lock_on')
             }
 
-            /*if ($(this).hasClass('control__btn-lock')){
-                $(this).parents('.language__item').clone().appendTo('.language__active');
-                $(this).parents('.language__item').remove();
-            }*/
+            if ($(this).hasClass('control__btn-lock')){
+
+                var _father = $(this).parents('.language__item');
+
+                if (_father.hasClass('language_inactive')){
+                    _father.addClass('language__animate');
+                    setTimeout(function(){
+                        _father.removeClass('language_inactive');
+                        _father.removeClass('language__animate');
+                    }, 300)
+                } else {
+                    _father.addClass('language__animate');
+                    setTimeout(function(){
+                        _father.addClass('language_inactive');
+                        _father.removeClass('language__animate');
+                    }, 300)
+                }
+            }
         }
     })
 
