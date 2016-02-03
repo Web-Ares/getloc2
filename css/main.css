@@ -947,6 +947,7 @@ div.statistic__line-04{
 }
 .language__item{
     position: relative;
+    width: 100%;
     padding: 20px 0 23px 18px;
     border-radius: 5px;
     border: 1px solid #e6e6e6;
