@@ -342,6 +342,11 @@ input[type="search"]::-webkit-search-cancel-button {
     background-color: #415059;
     background-position: center;
     background-repeat: no-repeat;
+    transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease;
+}
+.header__person:hover{
+    opacity: .7;
 }
 /* --------------- /header --------------- */
 
@@ -752,6 +757,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .statistic__line{
     position: relative;
+    width: 100%;
     height: 32px;
     border-radius: 5px;
     font-size: 12px;
@@ -759,6 +765,13 @@ input[type="search"]::-webkit-search-cancel-button {
     background-color: #f2f2f2;
     text-align: center;
     white-space: nowrap;
+}
+.statistic__tabs .statistic__line{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease, visibility .3s ease;
+    -webkit-transition: opacity .3s ease, visibility .3s ease;
 }
 .statistic__line-number{
     display: inline-block;
@@ -821,7 +834,12 @@ div.statistic__line-04{
     color: #333;
 }
 .statistic__tabs{
+    position: relative;
     height: 42px;
+}
+.statistic__tabs .statistic__line.active{
+    opacity: 1;
+    visibility: visible;
 }
 .statistic__tabs-links a{
     padding: 0 8px 5px;
