@@ -1045,6 +1045,36 @@ a.paginator__next:hover{
 }
 /* --------------- /paginator --------------- */
 
+/* --------------- social --------------- */
+.social{
+    position: absolute;
+    right: 18px;
+    top: -6px;
+}
+.social a{
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    margin-left: 6px;
+    border-radius: 100px;
+    background: url("../img/icons-social.png") no-repeat 0 0 #52616a;
+    transition: background-color .3s ease;
+    -webkit-transition: background-color .3s ease;
+}
+.social a:hover{
+    background-color: #18baea;
+}
+a.social-vk{
+    background-position: 26px 50%;
+}
+a.social-fb{
+    background-position: -46px 50%;
+}
+a.social-ok{
+    background-position: -117px 50%;
+}
+/* --------------- /social --------------- */
+
 /* --------------- footer --------------- */
 .footer__logo{
     position: absolute;
