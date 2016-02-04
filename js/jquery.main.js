@@ -189,6 +189,7 @@ var EditText = function(obj) {
 
                 }
             });
+
             _cancelBtn.on({
                 click: function () {
 
@@ -197,12 +198,10 @@ var EditText = function(obj) {
                     _textArea.attr('readonly', 'readonly');
                     _btnsWrap.slideUp(300);
 
-
-
                     return false
-
                 }
             });
+
             _obj.on({
                 submit: function () {
                     _obj.removeClass('active');
@@ -225,8 +224,6 @@ var EditText = function(obj) {
             }
 
             content = _textArea.val();
-            //
-            //content = content.replace(/\n/g, '<br>');
 
             hiddenDiv.html(content);
 
