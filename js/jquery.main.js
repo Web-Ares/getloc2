@@ -4,8 +4,12 @@ $(function(){
         popup = new Popup($(this));
     });
 
-    $('.statistic').each(function() {
+    $('.tabs').each(function() {
         Tabs($(this));
+    });
+
+    $('.site__aside-filter').each(function() {
+        Accordion($(this));
     });
 
     $('.btn-lock').on({
@@ -35,7 +39,7 @@ $(function(){
                 }
             }
         }
-    })
+    });
 
     $('.site').delegate( "input", "focus blur", function() {
         var elem = $( this );
@@ -57,12 +61,47 @@ $(function(){
 
 } );
 
+var Accordion = function(obj) {
+
+    //private properties
+    var _self = this,
+        _obj = obj,
+        _btn = _obj.children( ' span ' ),
+        _content = _obj.children( ' div ' );
+
+    //private methods
+    var _addEvents = function() {
+            _btn.on({
+                click: function () {
+
+                    if (_content.is(' :visible ')) {
+                        _content.slideUp(300);
+                        _btn.removeClass( ' active ' )
+                    }else{
+                        _content.slideDown(300);
+                        _btn.addClass( ' active ' )
+                    }
+
+                }
+            });
+        },
+        _init = function() {
+            _addEvents();
+        };
+
+    //public properties
+
+    //public methods
+
+    _init();
+};
+
 var Tabs = function(obj) {
 
     //private properties
     var _self = this,
-        _tabs = obj.find('.tabs-links > a'),
-        _wraps = obj.find('.tabs > div'),
+        _tabs = obj.find('.tabs__links > a'),
+        _wraps = obj.find('.tabs__content > div'),
         _i = 0,
         _obj = obj;
 
