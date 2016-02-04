@@ -8,8 +8,20 @@ $(function(){
         Tabs($(this));
     });
 
+    $('.phrases__item-col_translate').each(function() {
+        EditText($(this));
+    });
+
+    $('.phrases__item-field').each(function() {
+        EditComments($(this));
+    });
+
     $('.site__aside-filter').each(function() {
         Accordion($(this));
+    });
+
+    $('.phrases__item-controls-menu').each(function() {
+        SubMenu($(this));
     });
 
     $('.btn-lock').on({
@@ -60,6 +72,180 @@ $(function(){
     });
 
 } );
+
+var SubMenu = function(obj)  {
+
+    //private properties
+    var _self = this,
+        _obj = obj;
+
+    //private methods
+    var _addEvents = function() {
+
+            _obj.on({
+                click: function () {
+
+                    $('.phrases__item-controls-menu').not($(this)).removeClass('active');
+                    _obj.toggleClass('active')
+                }
+            });
+
+        },
+
+        _init = function() {
+            _addEvents();
+        };
+
+    //public properties
+
+    //public methods
+
+    _init();
+};
+
+var EditComments = function(obj) {
+
+    //private properties
+    var _self = this,
+        _obj = obj,
+        _btnsWrap = _obj.find('.phrases__item-col-btns'),
+        _cancelBtn = _btnsWrap.find('.cancel'),
+        _saveBtn = _btnsWrap.find('.save'),
+        _inputField = _obj.find('input'),
+        _fieldVal = _inputField.val();
+
+    //private methods
+    var _addEvents = function() {
+
+            _obj.on({
+                click: function () {
+                    _obj.addClass('active');
+                    _btnsWrap.slideDown(300)
+                }
+            });
+
+            _cancelBtn.on({
+                click: function () {
+                    _inputField.val(_fieldVal);
+
+                    if (!_inputField.val() == 0) {
+                        _obj.removeClass('active');
+                    }
+                    _btnsWrap.slideUp(300);
+
+                    return false
+                }
+            });
+
+            _obj.on({
+                submit: function () {
+                    _obj.removeClass('active');
+                    _btnsWrap.slideUp(300)
+                }
+            });
+
+        },
+        _checkVal = function () {
+
+            if (_inputField.val() == 0) {
+
+                _obj.addClass('active');
+                console.log(2);
+            }
+
+        },
+        _init = function() {
+            _addEvents();
+            _checkVal();
+        };
+
+    //public properties
+
+    //public methods
+
+    _init();
+};
+
+var EditText = function(obj) {
+
+    //private properties
+    var _self = this,
+        _obj = obj,
+        _textArea = _obj.find('textarea'),
+        _textAreaVal = _textArea.val(),
+        _btnsWrap = _obj.find('.phrases__item-col-btns'),
+        _cancelBtn = _obj.find('.cancel'),
+        _saveBtn = _obj.find('.save');
+
+    //private methods
+    var _addEvents = function() {
+
+            _textArea.on({
+                click: function () {
+
+                    _textArea.removeAttr('readonly');
+                    _obj.addClass('active');
+                    _btnsWrap.slideDown(300);
+
+                }
+            });
+            _cancelBtn.on({
+                click: function () {
+
+                    _obj.removeClass('active');
+                    _textArea.val(_textAreaVal);
+                    _textArea.attr('readonly', 'readonly');
+                    _btnsWrap.slideUp(300);
+
+
+
+                    return false
+
+                }
+            });
+            _obj.on({
+                submit: function () {
+                    _obj.removeClass('active');
+                    _btnsWrap.slideUp(300)
+                }
+            });
+        },
+
+        _setHeight = function () {
+
+            var hiddenDiv = null,
+                content = null;
+
+            if (!$('.hiddendiv').length) {
+
+                hiddenDiv = $(document.createElement('div'));
+                $('body').append(hiddenDiv);
+                hiddenDiv.addClass('hiddendiv');
+
+            }
+
+            content = _textArea.val();
+            //
+            //content = content.replace(/\n/g, '<br>');
+
+            hiddenDiv.html(content);
+
+            _textArea.css('height', hiddenDiv.innerHeight());
+
+            hiddenDiv.remove();
+
+        },
+        _init = function() {
+            _addEvents();
+            _setHeight();
+        };
+
+    //public properties
+
+    //public methods
+
+    _init();
+};
 
 var Accordion = function(obj) {
 
