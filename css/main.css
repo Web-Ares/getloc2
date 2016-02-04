@@ -412,7 +412,7 @@ input[type="search"]::-webkit-search-cancel-button {
     top: 100%;
     left: 0;
     width: 214px;
-    margin-top: 10px;
+    padding-top: 9px;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 2px 30px 0 rgba( 1, 1, 1, .2);
     background-color: #fff;
@@ -423,29 +423,8 @@ input[type="search"]::-webkit-search-cancel-button {
     opacity: 0;
     transition: visibility .3s ease, opacity .3s ease;
     -webkit-transition: visibility .3s ease, opacity .3s ease;
-    z-index: 3;
+    z-index: -1;
     overflow: hidden;
-}
-.menu__wrap:before{
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 100%;
-    height: 10px;
-}
-.menu__wrap:after {
-    bottom: 100%;
-    left: 10px;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: rgba(255, 255, 255, 0);
-    border-bottom-color: #fff;
-    border-width: 5px;
 }
 .open-menu .menu__wrap{
     opacity: 1;
@@ -454,8 +433,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .menu a{
     display: block;
     height: 30px;
-    margin-bottom: 2px;
-    padding: 8px 22px;
+    padding: 10px 22px;
     color: #000;
     line-height: 15px;
     transition: background-color .3s ease, color .3s ease;

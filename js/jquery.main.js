@@ -1,9 +1,5 @@
 $(function(){
 
-    $('.popup').each(function(){
-        popup = new Popup($(this));
-    });
-
     $('.tabs').each(function() {
         Tabs($(this));
     });
@@ -24,44 +20,12 @@ $(function(){
         SubMenu($(this));
     });
 
-    $('.btn-lock').on({
-        'click': function(){
-            if (!($(this).hasClass('btn-lock_on'))){
-                $(this).addClass('btn-lock_on')
-            } else {
-                $(this).removeClass('btn-lock_on')
-            }
-
-            if ($(this).hasClass('control__btn-lock')){
-
-                var _father = $(this).parents('.language__item');
-
-                if (_father.hasClass('language_inactive')){
-                    _father.addClass('language__animate');
-                    setTimeout(function(){
-                        _father.removeClass('language_inactive');
-                        _father.removeClass('language__animate');
-                    }, 300)
-                } else {
-                    _father.addClass('language__animate');
-                    setTimeout(function(){
-                        _father.addClass('language_inactive');
-                        _father.removeClass('language__animate');
-                    }, 300)
-                }
-            }
-        }
-    });
-
-    $('.site').delegate( "input", "focus blur", function() {
-        var elem = $( this );
-        setTimeout(function() {
-            elem.parent().toggleClass( "focused", elem.is( ":focus" ) );
-        }, 0 );
-    });
-
     $('.menu').each(function () {
         mobileMenu($(this));
+    });
+
+    $('.btn-lock').each(function () {
+        BtnLock($(this));
     });
 
     $(document).bind('click',function(e){
@@ -346,6 +310,57 @@ var mobileMenu = function (obj) {
             });
         },
         _init = function () {
+            _addEvents();
+        };
+
+    //public properties
+
+    //public methods
+
+    _init();
+};
+
+var BtnLock = function(obj)  {
+
+    //private properties
+    var _self = this,
+        _obj = obj;
+
+    //private methods
+    var _addEvents = function() {
+
+            _obj.on({
+                'click': function(){
+                    if (!($(this).hasClass('btn-lock_on'))){
+                        $(this).addClass('btn-lock_on')
+                    } else {
+                        $(this).removeClass('btn-lock_on')
+                    }
+
+                    if ($(this).hasClass('control__btn-lock')){
+
+                        var _father = $(this).parents('.language__item');
+
+                        if (_father.hasClass('language_inactive')){
+                            _father.addClass('language__animate');
+                            setTimeout(function(){
+                                _father.removeClass('language_inactive');
+                                _father.removeClass('language__animate');
+                            }, 300)
+                        } else {
+                            _father.addClass('language__animate');
+                            setTimeout(function(){
+                                _father.addClass('language_inactive');
+                                _father.removeClass('language__animate');
+                            }, 300)
+                        }
+                    }
+                }
+            });
+
+        },
+
+        _init = function() {
             _addEvents();
         };
 
