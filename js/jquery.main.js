@@ -109,8 +109,21 @@ var SubMenu = function(obj)  {
                 click: function () {
 
                     $('.phrases__item-controls-menu').not($(this)).removeClass('active');
-                    _obj.toggleClass('active')
+                    _obj.toggleClass('active');
+
+                    if (event.stopPropagation) {
+                        event.stopPropagation();
+                    } else {
+                        event.cancelBubble = true;
+                    }
                 }
+            });
+            $('body').click(function(e){
+
+                var elem=$(e.target);
+
+                _obj.removeClass('active')
+
             });
 
         },
