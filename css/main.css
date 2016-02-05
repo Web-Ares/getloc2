@@ -2023,7 +2023,7 @@ a.social-ok{
 /*-----------------/phrases--------------*/
 
 /*--------------hiddendiv--------------*/
-.hiddendiv {
+.hidden {
     display: none;
     white-space: pre-wrap;
     width: 327px;

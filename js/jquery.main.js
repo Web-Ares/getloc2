@@ -250,11 +250,11 @@ var EditText = function(obj) {
             var hiddenDiv = null,
                 content = null;
 
-            if (!$('.hiddendiv').length) {
+            if (!$('.hidden').length) {
 
                 hiddenDiv = $(document.createElement('div'));
                 $('body').append(hiddenDiv);
-                hiddenDiv.addClass('hiddendiv');
+                hiddenDiv.addClass('hidden');
 
             }
 
