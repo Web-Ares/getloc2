@@ -28,6 +28,14 @@ $(function(){
         BtnLock($(this));
     });
 
+    $('.site__aside-slick').each(function () {
+        Slick($(this));
+    });
+
+    $('.phrases__control').each(function () {
+        Slick($(this));
+    });
+
     $(document).bind('click',function(e){
         if ($(e.target).closest('.menu').length == 0){
             $('.menu__icon').removeClass('close-menu');
@@ -36,6 +44,58 @@ $(function(){
     });
 
 } );
+
+var Slick = function(obj)  {
+
+    //private properties
+    var _obj = obj,
+        _window = $(window),
+        _objWidth = _obj.innerWidth(),
+        _start  = _obj.offset().top;
+
+    //private methods
+    var _addEvents = function() {
+
+            _window.on({
+                scroll: function () {
+
+                    _navigation();
+
+                }
+            });
+
+        },
+
+         _navigation = function(){
+
+             var scrolling = $(window).scrollTop();
+
+             _obj.css({
+                 'width': _objWidth + 2
+             });
+
+             if (scrolling > _start) {
+
+                 _obj.addClass('fix')
+
+             }else{
+
+                 _obj.removeClass('fix')
+
+             }
+
+        },
+
+        _init = function() {
+            _addEvents();
+        };
+
+    //public properties
+
+    //public methods
+
+    _init();
+};
 
 var SubMenu = function(obj)  {
 
@@ -166,7 +226,8 @@ var EditText = function(obj) {
             _obj.on({
                 submit: function () {
                     _obj.removeClass('active');
-                    _btnsWrap.slideUp(300)
+                    _btnsWrap.slideUp(300);
+                    return false
                 }
             });
         },

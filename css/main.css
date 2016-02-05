@@ -197,7 +197,7 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 223px;
 }
 .site__aside-menu {
-    margin-bottom: 26px;
+    margin-bottom: 16px;
     padding: 26px 29px 12px;
     border: 1px solid #e6e6e6;
     border-radius: 5px;
@@ -233,6 +233,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .site__aside-title {
     margin-bottom: 11px;
     padding-left: 11px;
+    padding-top: 10px;
     color: #b2b2b2;
     font-size: 17px;
     font-weight: 300;
@@ -1170,7 +1171,7 @@ div.statistic__line-04{
 .tabs__links {
 
 }
-.tabs__links a{
+.tabs__links > a{
     padding: 0 8px 5px;
     border-bottom: 2px solid transparent;
     font-size: 12px;
@@ -1179,12 +1180,36 @@ div.statistic__line-04{
     transition: border-bottom-color .3s ease, color .3s ease;
     -webkit-transition: border-bottom-color .3s ease, color .3s ease;
 }
-.tabs__links a:hover{
+.tabs__links > a:hover{
     color: #18baea;
 }
-.tabs__links .active{
+.tabs__links > a.active{
     border-bottom-color: #18baea;
     color: #18baea;
+    font-weight: 500;
+}
+.tabs__links-archive {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+.tabs__links-archive a {
+    padding: 0 0 8px;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    letter-spacing: -0.7px;
+    color: #b2b2b2;
+    transition: border-bottom-color .3s ease, color .3s ease;
+    -webkit-transition: border-bottom-color .3s ease, color .3s ease;
+}
+.tabs__links-archive a:hover,
+.tabs__links-archive a:active {
+    color: #ff644d;
+    border-color: #ff644d;
+}
+.tabs__links-archive a:active {
+    font-weight: 500;
 }
 /*-----------------/tabs--------------------*/
 
@@ -1468,6 +1493,9 @@ a.social-ok{
     -webkit-transition: color .3s ease-in-out;
     transition: color .3s ease-in-out;
 }
+.nice-check label:hover {
+    text-decoration: none;
+}
 .nice-check label:after {
     display: inline-block;
     position: absolute;
@@ -1512,7 +1540,7 @@ a.social-ok{
     margin-bottom: 20px;
     border-bottom: 1px solid #e6e6e6;
 }
-.phrases .tabs__links a {
+.phrases .tabs__links > a {
     display: inline-block;
     font-size: 15px;
     letter-spacing: -0.7px;
@@ -1523,6 +1551,7 @@ a.social-ok{
     display: inline-block;
     margin: 0 0 0 13px;
     font-size: 12px;
+    font-weight: 400 !important;
 }
 .phrases__control {
     position: relative;
@@ -1645,6 +1674,10 @@ a.social-ok{
 .phrases__item:hover .phrases__item-btn-translate {
     text-decoration: none;
 }
+.phrases__item:hover .phrases__item-field > div:first-child button {
+    opacity: 1;
+    visibility: visible;
+}
 .phrases__item-col {
     vertical-align: top;
     display: inline-block;
@@ -1712,7 +1745,14 @@ a.social-ok{
     height: 9px;
     background: url(../img/close-icon.png) no-repeat;
     background-size: contain;
+    -webkit-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
     content: '';
+}
+.phrases__item-col-btns button:hover:before {
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
 }
 .phrases__item-col-btns button[type='submit'] {
     color: #18baea;
@@ -1786,27 +1826,21 @@ a.social-ok{
     -webkit-transition: opacity .3s ease-in-out, visibility .3s ease-in-out, transform .3s ease-in-out;
     transition: opacity .3s ease-in-out, visibility .3s ease-in-out, transform .3s ease-in-out;
 }
-.phrases__item-field.active > div:first-child button {
-    opacity: 1;
-    visibility: visible;
-}
-.phrases__item-field.active > div:first-child button:hover {
+.phrases__item-field div:first-child button:hover {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 .phrases__item-field .phrases__item-col-btns {
-
     margin: -11px 0 6px 21px;
 }
 .phrases__item-col_translate {
 
 }
 .phrases__item-col input {
-    /* display: block; */
     position: relative;
     top: 0;
-    margin: -7px 0px 12px 0px;
+    margin: -7px 0 12px 0;
     padding: 0 10px;
     width: 100%;
     height: 32px;
@@ -1830,7 +1864,14 @@ a.social-ok{
     height: 8px;
     background: url(../img/translate-types_sprite.png) 0 -32px no-repeat;
     background-size: 55px 42px;
+    -webkit-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
     content: '';
+}
+.phrases__item-btn-translate:hover:before {
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
 }
 .phrases__item-controls {
     height: 39px;
@@ -1981,6 +2022,7 @@ a.social-ok{
 }
 /*-----------------/phrases--------------*/
 
+/*--------------hiddendiv--------------*/
 .hiddendiv {
     display: none;
     white-space: pre-wrap;
@@ -1990,3 +2032,12 @@ a.social-ok{
     font-size: 14px;
     line-height: 18px;
 }
+/*--------------/hiddendiv--------------*/
+
+/*-------------fix------------*/
+.fix {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+/*-------------/fix------------*/
