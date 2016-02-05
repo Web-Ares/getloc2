@@ -40,8 +40,7 @@ $(function(){
 var SubMenu = function(obj)  {
 
     //private properties
-    var _self = this,
-        _obj = obj;
+    var _obj = obj;
 
     //private methods
     var _addEvents = function() {
@@ -70,11 +69,9 @@ var SubMenu = function(obj)  {
 var EditComments = function(obj) {
 
     //private properties
-    var _self = this,
-        _obj = obj,
+    var _obj = obj,
         _btnsWrap = _obj.find('.phrases__item-col-btns'),
         _cancelBtn = _btnsWrap.find('.cancel'),
-        _saveBtn = _btnsWrap.find('.save'),
         _inputField = _obj.find('input'),
         _fieldVal = _inputField.val();
 
@@ -133,13 +130,11 @@ var EditComments = function(obj) {
 var EditText = function(obj) {
 
     //private properties
-    var _self = this,
-        _obj = obj,
+    var _obj = obj,
         _textArea = _obj.find('textarea'),
         _textAreaVal = _textArea.val(),
         _btnsWrap = _obj.find('.phrases__item-col-btns'),
-        _cancelBtn = _obj.find('.cancel'),
-        _saveBtn = _obj.find('.save');
+        _cancelBtn = _obj.find('.cancel');
 
     //private methods
     var _addEvents = function() {
@@ -211,8 +206,7 @@ var EditText = function(obj) {
 var Accordion = function(obj) {
 
     //private properties
-    var _self = this,
-        _obj = obj,
+    var _obj = obj,
         _btn = _obj.children( ' span ' ),
         _content = _obj.children( ' div ' );
 
@@ -246,11 +240,10 @@ var Accordion = function(obj) {
 var Tabs = function(obj) {
 
     //private properties
-    var _self = this,
-        _tabs = obj.find('.tabs__links > a'),
-        _wraps = obj.find('.tabs__content > div'),
-        _i = 0,
-        _obj = obj;
+    var _obj = obj,
+        _tabs = _obj.find('.tabs__links > a'),
+        _wraps = _obj.find('.tabs__content > div'),
+        _i = 0;
 
     //private methods
     var _addEvents = function() {
@@ -287,11 +280,7 @@ var mobileMenu = function (obj) {
     //private properties
     var _obj = obj,
         _menu = $('.menu'),
-        _openBtn = $('.menu__icon'),
-        _closeBtn = $('.close-menu'),
-        _site = $('.site'),
-        _window = $(window),
-        _windowWidth = $(window).width();
+        _openBtn = $('.menu__icon');
 
     //private methods
     var _addEvents = function () {
@@ -323,8 +312,7 @@ var mobileMenu = function (obj) {
 var BtnLock = function(obj)  {
 
     //private properties
-    var _self = this,
-        _obj = obj;
+    var _obj = obj;
 
     //private methods
     var _addEvents = function() {
@@ -342,16 +330,16 @@ var BtnLock = function(obj)  {
                         var _father = $(this).parents('.language__item');
 
                         if (_father.hasClass('language_inactive')){
-                            _father.addClass('language__animate');
+                            _father.addClass('language_animate');
                             setTimeout(function(){
                                 _father.removeClass('language_inactive');
-                                _father.removeClass('language__animate');
+                                _father.removeClass('language_animate');
                             }, 300)
                         } else {
-                            _father.addClass('language__animate');
+                            _father.addClass('language_animate');
                             setTimeout(function(){
                                 _father.addClass('language_inactive');
-                                _father.removeClass('language__animate');
+                                _father.removeClass('language_animate');
                             }, 300)
                         }
                     }

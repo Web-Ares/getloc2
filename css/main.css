@@ -1329,7 +1329,7 @@ div.statistic__line-04{
     order: 3;
     opacity: .6;
 }
-.language__animate{
+.language_animate{
     transform: scale(0);
     -webkit-transform: scale(0);
 }
