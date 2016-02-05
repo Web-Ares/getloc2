@@ -31,16 +31,16 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* --------------- placeholder --------------- */
 ::-webkit-input-placeholder {
-    color: #ccc;
+    color: #656565;
     -webkit-transition: color 300ms ease-in-out;
 }
 :-moz-placeholder {
-    color: #ccc;
+    color: #656565;
     -webkit-transition: color 300ms ease-in-out;
     transition: color 300ms ease-in-out;
 }
 .placeholder {
-    color: #ccc;
+    color: #656565;
     -webkit-transition: color 300ms ease-in-out;
     transition: color 300ms ease-in-out;
 }
@@ -1416,7 +1416,7 @@ a.paginator__next:hover{
     -webkit-transition: background-color .3s ease;
 }
 .social a:hover{
-    background-color: #18baea;
+    background-color: #696d76;
 }
 a.social-vk{
     background-position: 26px 50%;
