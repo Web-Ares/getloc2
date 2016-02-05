@@ -1526,7 +1526,7 @@ a.social-ok{
 }
 .phrases__control {
     position: relative;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     padding: 0 0 0 12px;
     border: 1px solid #e6e6e6;
     border-radius: 4px;
@@ -1650,7 +1650,7 @@ a.social-ok{
     display: inline-block;
     width: 50%;
     margin-left: -4px;
-    padding: 0 5px 22px 21px;
+    padding: 0 5px 20px 21px;
     font-size: 14px;
     line-height: 18px;
     text-align: left;
@@ -1664,7 +1664,7 @@ a.social-ok{
 }
 .phrases__item-col_translate {
     color: #999;
-    padding: 0 8px 22px 12px;
+    padding: 0 8px 20px 12px;
     /* margin: 0px 0 0 -4px; */
 }
 .phrases__item-col_translate textarea {
@@ -1680,7 +1680,6 @@ a.social-ok{
     line-height: 18px;
     -webkit-transition: color .3s ease-in-out, border .3s ease-in-out;
     transition: color .3s ease-in-out, border .3s ease-in-out;
-
 }
 .phrases__item-col_translate.active textarea {
     min-height: 83px;
@@ -1727,7 +1726,7 @@ a.social-ok{
 }
 .phrases__item-field {
     display: inline-block;
-    margin: 0 0 23px 16px;
+    margin: 0 0 3px 16px;
 }
 .phrases__item-field > div:first-child {
     position: relative;
@@ -1775,8 +1774,8 @@ a.social-ok{
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    top: 13px;
-    right: -19px;
+    top: 15px;
+    right: -17px;
     width: 9px;
     height: 9px;
     padding: 0;
@@ -1796,13 +1795,18 @@ a.social-ok{
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
+.phrases__item-field .phrases__item-col-btns {
+
+    margin: -11px 0 6px 21px;
+}
 .phrases__item-col_translate {
 
 }
 .phrases__item-col input {
+    /* display: block; */
     position: relative;
     top: 0;
-    margin: -7px -10px 12px -9px;
+    margin: -7px 0px 12px 0px;
     padding: 0 10px;
     width: 100%;
     height: 32px;
@@ -1811,7 +1815,7 @@ a.social-ok{
 }
 .phrases__item-btn-translate {
     position: relative;
-    margin: 0 0 0 -3px;
+    margin: 0 0 0px 6px;
     background: none;
     border: none;
     font-size: 12px;
@@ -1842,6 +1846,10 @@ a.social-ok{
 }
 .phrases__item-controls .nice-check {
     float: left;
+}
+.phrases__item-controls .nice-check label {
+
+    padding-left: 39px;
 }
 .phrases__item-controls-right {
     float: right;

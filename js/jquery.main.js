@@ -72,8 +72,7 @@ var EditComments = function(obj) {
     var _obj = obj,
         _btnsWrap = _obj.find('.phrases__item-col-btns'),
         _cancelBtn = _btnsWrap.find('.cancel'),
-        _inputField = _obj.find('input'),
-        _fieldVal = _inputField.val();
+        _inputField = _obj.find('input');
 
     //private methods
     var _addEvents = function() {
@@ -81,7 +80,8 @@ var EditComments = function(obj) {
             _obj.on({
                 click: function () {
                     _obj.addClass('active');
-                    _btnsWrap.slideDown(300)
+                    _btnsWrap.slideDown(300);
+                    _fieldVal = _inputField.val();
                 }
             });
 
@@ -101,7 +101,9 @@ var EditComments = function(obj) {
             _obj.on({
                 submit: function () {
                     _obj.removeClass('active');
-                    _btnsWrap.slideUp(300)
+                    _btnsWrap.slideUp(300);
+
+                    return false
                 }
             });
 
@@ -111,7 +113,7 @@ var EditComments = function(obj) {
             if (_inputField.val() == 0) {
 
                 _obj.addClass('active');
-                console.log(2);
+
             }
 
         },
