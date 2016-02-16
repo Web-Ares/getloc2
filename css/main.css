@@ -1746,6 +1746,7 @@ a.social-ok{
     line-height: 18px;
     -webkit-transition: color .3s ease-in-out, border .3s ease-in-out;
     transition: color .3s ease-in-out, border .3s ease-in-out;
+    font-family: 'Fira Sans', sans-serif;
 }
 .phrases__item-col_translate.active textarea {
     min-height: 83px;
@@ -1754,6 +1755,7 @@ a.social-ok{
     border: 1px solid #e6e6e6;
     border-radius: 4px;
     color: #333;
+    font-family: 'Fira Sans', sans-serif;
 }
 .phrases__item-col-btns {
     display: none;
@@ -1883,10 +1885,11 @@ a.social-ok{
     height: 32px;
     border: 1px solid #e6e6e6;
     border-radius: 4px;
+    font-family: 'Fira Sans', sans-serif;
 }
 .phrases__item-btn-translate {
     position: relative;
-    margin: 0 0 0px 6px;
+    margin: 0 0 0 6px;
     background: none;
     border: none;
     font-size: 12px;
