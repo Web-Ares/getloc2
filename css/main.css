@@ -1841,7 +1841,7 @@ a.social-ok{
     border: 1px solid #fff5d9;
     background: transparent;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 31px;
     color: #bea88c;
     -webkit-transition: color .3s ease-in-out, background .3s ease-in-out, border .3s ease-in-out;
     transition: color .3s ease-in-out, background .3s ease-in-out, border .3s ease-in-out;
@@ -2059,7 +2059,7 @@ a.social-ok{
     position: relative;
     display: inline-block;
     top: 9px;
-    padding: 3px 10px 3px 23px;
+    padding: 4px 10px 3px 23px;
     margin: 0 0 0 14px;
     border: 1px solid #ccc;
     border-radius: 3px;
