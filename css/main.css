@@ -1730,7 +1730,7 @@ a.social-ok{
 }
 .phrases__item-col_translate {
     color: #999;
-    padding: 0 8px 20px 12px;
+    padding: 0 8px 18px 12px;
     /* margin: 0px 0 0 -4px; */
 }
 .phrases__item-col_translate textarea {
@@ -1771,6 +1771,8 @@ a.social-ok{
     font-size: 12px;
     color: #ff644d;
     text-decoration: underline;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
 }
 .phrases__item-col-btns button:hover{
     text-decoration: none;
@@ -1842,6 +1844,8 @@ a.social-ok{
     color: #bea88c;
     -webkit-transition: color .3s ease-in-out, background .3s ease-in-out, border .3s ease-in-out;
     transition: color .3s ease-in-out, background .3s ease-in-out, border .3s ease-in-out;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
 }
 .phrases__item-field.active input {
     background: #fff;
@@ -1896,6 +1900,8 @@ a.social-ok{
     font-size: 12px;
     text-decoration: underline;
     color: #333;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
 }
 .phrases__item-btn-translate:before {
     position: absolute;
@@ -2059,6 +2065,8 @@ a.social-ok{
     background: transparent;
     font-size: 11px;
     color: #ccc;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
 }
 .phrases__item-controls button:before,
 .phrases__item-controls button:after {
