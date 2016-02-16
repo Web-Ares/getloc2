@@ -1625,7 +1625,7 @@ a.social-ok{
     background-image: url("../img/controls_sprite.png");
     background-repeat: no-repeat;
     background-color: transparent;
-    background-size: 189px 75px;
+    background-size: 189px 74px;
     -webkit-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
 }
