@@ -881,8 +881,9 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .btn_3 {
     position: absolute;
+    top: -1px;
     right: -1px;
-    height: 47px;
+    height: 48px;
     padding: 17px 18px 0 42px;
     border: 1px solid #e58e1a;
     border-radius: 0 3px 3px 0;
@@ -1580,6 +1581,7 @@ a.social-ok{
     letter-spacing: -0.7px;
     padding: 0 0 6px;
     margin-right: 41px;
+    margin-bottom: -1px;
 }
 .phrases .tabs__links a span {
     display: inline-block;
