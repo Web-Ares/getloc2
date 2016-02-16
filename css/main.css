@@ -1738,7 +1738,7 @@ a.social-ok{
     overflow: hidden;
     width: 100%;
     padding: 4px 7px 4px;
-    margin: -7px 0 0;
+    margin: -5px 0 0;
     border-radius: 4px;
     border: 1px solid transparent;
     font-size: 14px;
@@ -1747,6 +1747,7 @@ a.social-ok{
     -webkit-transition: color .3s ease-in-out, border .3s ease-in-out;
     transition: color .3s ease-in-out, border .3s ease-in-out;
     font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
 }
 .phrases__item-col_translate.active textarea {
     min-height: 83px;
@@ -1755,7 +1756,6 @@ a.social-ok{
     border: 1px solid #e6e6e6;
     border-radius: 4px;
     color: #333;
-    font-family: 'Fira Sans', sans-serif;
 }
 .phrases__item-col-btns {
     display: none;
@@ -1886,6 +1886,7 @@ a.social-ok{
     border: 1px solid #e6e6e6;
     border-radius: 4px;
     font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
 }
 .phrases__item-btn-translate {
     position: relative;
