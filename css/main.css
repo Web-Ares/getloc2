@@ -2205,4 +2205,17 @@ a.social-ok{
     line-height: 20px;
     border-radius: 3px;
 }
-/*-------------/fix------------*/
+.create__add ul li a.create__copy{
+    display: block;
+    color: #18baea;
+    margin: 0 0 30px -23px;
+}
+.create__add ul li a{
+    color: #333;
+    text-decoration: underline;
+}
+.create__add a:hover{
+    text-decoration: none;
+}
+
+/*-------------/discount__language------------*/
