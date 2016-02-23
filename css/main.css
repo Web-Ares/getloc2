@@ -127,6 +127,12 @@ input[type="search"]::-webkit-search-cancel-button {
     font-weight: 400;
     text-align: center;
 }
+.title_create{
+    margin: 21px 0 51px;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
 .site__subtitle{
     order: 2;
     margin: 28px 0 31px;
@@ -2363,17 +2369,4 @@ a.social-ok{
     line-height: 20px;
     border-radius: 3px;
 }
-.create__add ul li a.create__copy{
-    display: block;
-    color: #18baea;
-    margin: 0 0 30px -23px;
-}
-.create__add ul li a{
-    color: #333;
-    text-decoration: underline;
-}
-.create__add a:hover{
-    text-decoration: none;
-}
-
-/*-------------/discount__language------------*/
+/*-------------/fix------------*/
