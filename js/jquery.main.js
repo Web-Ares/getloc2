@@ -530,6 +530,7 @@ var FormValidation = function (obj) {
                     }
                 }
             });
+
             _inputs.on({
 
                 'focus': function(){
