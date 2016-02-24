@@ -491,7 +491,7 @@ var FormValidation = function (obj) {
 
                     if(!(_obj.find('.error').length) ){
 
-                        if (_obj.hasClass('discount__form')) {
+                        if (_obj.hasClass('new-project__form')) {
 
                             var selectsVal = [];
 
@@ -507,7 +507,7 @@ var FormValidation = function (obj) {
                                 data: {
                                     name: $('#name-project').val(),
                                     email: $('#link-project').val(),
-                                    check: $('#create__check-val').val(),
+                                    check: $('#new-project__check-val').val(),
                                     language: selectsVal
                                 },
                                 success: function (data) {
