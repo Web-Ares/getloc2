@@ -2251,6 +2251,7 @@ a.social-ok{
 .create__question-text{
     display: none;
     position: absolute;
+    z-index: 2;
     bottom: 26px;
     right: -49px;
     width: 281px;
