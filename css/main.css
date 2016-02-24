@@ -130,7 +130,7 @@ input[type="search"]::-webkit-search-cancel-button {
     font-weight: 400;
     text-align: center;
 }
-.title_create{
+.title_project{
      margin: 21px 0 51px;
      font-size: 30px;
      font-weight: 400;
@@ -856,6 +856,22 @@ input[type="search"]::-webkit-search-cancel-button {
     border: none;
     font: 14px 'Fira Sans', sans-serif;
     cursor: pointer;
+}
+.btn:hover {
+    background-color: #ffdd5d;
+}
+.btn_project{
+    display: block;
+    width: 250px;
+    padding: 15px 0;
+    margin-top: 17px;
+    border-radius: 3px;
+    background-color: #fed330;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    transition: background-color .3s ease;
+    -webkit-transition: background-color .3s ease;
 }
 .btn_1{
     display: block;
@@ -2044,15 +2060,11 @@ a.social-ok{
 }
 /*-------------/fix------------*/
 
-/*-------------create------------*/
-.create{
+/*-------------new-project------------*/
+.new-project{
     margin-bottom: 108px;
 }
-.create_2{
-    margin-bottom: 191px;
-}
-.create__pros li:before,
-.create__add li:before{
+.new-project__pros li:before{
     position: absolute;
     top: 4px;
     left: 1px;
@@ -2061,62 +2073,44 @@ a.social-ok{
     background: url("../img/icons-status.png")0 14px;
     content: "";
 }
-.create ul{
+.new-project ul{
     margin-bottom: 30px;
 }
-.create li{
+.new-project li{
     position: relative;
     padding-left: 24px;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: -0.2px;
     line-height: 27px;
 }
-.create__pros{
+.new-project__pros{
     display: inline-block;
     vertical-align: top;
     width: 406px;
     margin: 6px 67px 0 0;
 }
-.create__pic{
+.new-project__pic{
     width: 295px;
     height:187px;
     background: no-repeat center;
     margin-bottom: 32px;
 }
-.create__form{
+.new-project__form{
     display: inline-block;
     vertical-align: top;
     width: 426px;
     margin-top: 4px;
     padding-right: 20px;
 }
-.create__pros li{
-    margin-bottom: 5px;
-}
-.create__form fieldset{
+.new-project__form fieldset{
     position: relative;
 }
-.create__form-btn{
-    display: block;
-    width: 250px;
-    padding: 15px 0;
-    margin-top: 17px;
-    border-radius: 3px;
-    background-color: #fed330;
-    font-weight: 700;
-    font-size: 14px;
-    border: none;
-    color: #333;
-    text-align: center;
-    transition: background-color .3s ease;
-    -webkit-transition: background-color .3s ease;
-}
-.create__form-btn:hover {
+.new-project__form-btn:hover {
     background-color: #ffdd5d;
 }
-.create__form input{
+.new-project__form input{
     width: 100%;
     height: 40px;
     font: 14px 'Fira Sans', sans-serif;
@@ -2126,114 +2120,47 @@ a.social-ok{
     transition: border-color .3s ease;
     -wbkit-transition: border-color .3s ease;
 }
-.create__form .error input {
+.new-project__form .error input {
     border-color: #ff6353;
 }
-.create__form label{
+.new-project__form label{
     display: block;
     margin-bottom: 3px;
     font-size: 14px;
     color: #cccccc;
     font-weight: 100;
 }
-.create__form .error .ares-select {
+.new-project__form .error .ares-select {
     border-color: #ff6353;
     color: #f35747
 }
-.create__form .error .ares-select__item:after {
+.new-project__form .error .ares-select__item:after {
     border-left: 2px solid #ff6353;
     border-bottom: 2px solid #ff6353;
 }
-.create__form.success{
+.new-project__form.success{
     opacity: 0;
     visibility: hidden;
 }
-.create__form .focused label{
+.new-project__form .focused label{
     color: #fff;
 }
-.create__form .focused input{
+.new-project__form .focused input{
     border-color: #18baea;
 }
-.create__form .error input{
+.new-project__form .error input{
     border-color: #ff6353;
 }
-.create__form .error input::-webkit-input-placeholder {color: #ff6353}
-.create__form .error input::-moz-placeholder          {color: #ff6353}
-.create__form .error input:-moz-placeholder           {color: #ff6353}
-.create__form .error input:-ms-input-placeholder
-.create__form fieldset.discount__language{
+.new-project__form .error input::-webkit-input-placeholder {color: #ff6353}
+.new-project__form .error input::-moz-placeholder          {color: #ff6353}
+.new-project__form .error input:-moz-placeholder           {color: #ff6353}
+.new-project__form .error input:-ms-input-placeholder
+.new-project__form fieldset.discount__language{
     width: 100%;
     text-align: left;
     margin-bottom: 39px;
 }
-.create__successfully{
-    display: inline-block;
-    vertical-align: top;
-    width: 336px;
-    padding-top: 16px;
-    margin-right: 136px;
-    text-align: center;
-}
-.create__successfully-pic{
-    width: 90px;
-    height: 90px;
-    margin: 0 auto 34px;
-    background: no-repeat center;
-}
-.create__successfully span{
-    display: block;
-    margin: 0 37px 25px;
-    line-height: 23px;
-    font-size: 18px;
-    font-weight: 500;
-}
-.create__successfully p{
-    margin-bottom: 10px;
-    font-size: 14px;
-    color:#333;
-    line-height: 24px;
-}
-.create__successfully a{
-    color: #18baea;
-    text-decoration: underline;
-}
-.create__successfully a:hover{
-    text-decoration: none;
-}
-.create__add{
-    display: inline-block;
-    vertical-align: top;
-    width: 476px;
-    text-align: left;
-}
-.create__add div{
-    padding: 11px 13px 2px;
-    margin: 9px 0 11px -22px;
-    border-radius: 3px;
-    border: 1px solid #d0d0d0;
-}
-.create__add p{
-    margin-bottom: 8px;
-    font-size: 12px;
-    font-weight: 300;
-    color: #808080;
-    line-height: 20px;
-    border-radius: 3px;
-}
-.create__add ul li a.create__copy{
-    display: block;
-    color: #18baea;
-    margin: 0 0 30px -23px;
-}
-.create__add ul li a{
-    color: #333;
-    text-decoration: underline;
-}
-.create__add a:hover{
-
-    text-decoration: none;
-}
-.create__question{
+.new-project__question{
     position: absolute;
     top: 30px;
     right: -22px;
@@ -2245,10 +2172,10 @@ a.social-ok{
     transition: background .3s ease;
     -webkit-transition: background .3s ease;
 }
-.create__question:hover{
+.new-project__question:hover{
     background-color: #fcd130;
 }
-.create__question-text{
+.new-project__question-text{
     display: none;
     position: absolute;
     z-index: 2;
@@ -2263,7 +2190,7 @@ a.social-ok{
     line-height: 18px;
     text-align: left;
 }
-.create__question>span{
+.new-project__question>span{
     display: none;
     position: absolute;
     bottom: 0;
@@ -2271,14 +2198,14 @@ a.social-ok{
     width: 281px;
     height: 30px;
 }
-.create__question-link{
+.new-project__question-link{
     color: #18baea;
     text-decoration: underline;
 }
-.create__question-link:hover{
+.new-project__question-link:hover{
     text-decoration: none;
 }
-.create__question-text:after{
+.new-project__question-text:after{
     position: absolute;
     top: 100%;
     border: solid transparent;
@@ -2291,11 +2218,11 @@ a.social-ok{
     border-width: 7px 10px 0 7px;
     right: 48px;
 }
-.create__question:hover>span,
-.create__question:hover .create__question-text{
+.new-project__question:hover>span,
+.new-project__question:hover .new-project__question-text{
     display: block;
 }
-.create__skip{
+.new-project__skip{
     position: absolute;
     top: 6px;
     right: 16px;
@@ -2303,29 +2230,30 @@ a.social-ok{
     color: #b2b2b2;
     text-decoration: underline;
 }
-.create__skip:hover{
+.new-project__skip:hover{
     text-decoration: none;
 }
-.create__check label {
+.new-project__check label {
     display: inline-block;
     vertical-align: top;
     font-size: 14px;
     width: 340px;
 }
-.create__form .create__check input{
+.new-project__form .new-project__check input{
     display: inline-block;
     vertical-align: middle;
+    visibility: hidden;
     width: 16px;
     height: 16px;
 }
-.site__form .create__check label {
+.new-project__form .new-project__check label {
     display: inline-block;
     position: relative;
     width: 16px;
     height: 16px;
     color: #cccccc;
 }
-.create__check input[type="checkbox"] + .create__checked{
+.new-project__check input[type="checkbox"] + .new-project__checked{
     position: absolute;
     z-index: 2;
     left: 0; top: 0;
@@ -2336,7 +2264,7 @@ a.social-ok{
     background: #fff;
     cursor: pointer;
 }
-.create__check-title{
+.new-project__check-title{
     position: absolute;
     z-index: 2;
     top: 1px;
@@ -2346,23 +2274,117 @@ a.social-ok{
     color: #333;
     font-weight: 400;
 }
-.create__check input[type="checkbox"]:checked + .create__checked{
+.new-project__check input[type="checkbox"]:checked + .new-project__checked{
     background: #fff url(../img/icon-right.png) no-repeat center;
 }
-.create__check>span{
+.new-project__check>span{
     padding-left:5px;
     font-weight: 400;
 }
-.create__check{
+.new-project__check{
     margin-bottom: 37px;
 }
-.create .ares-select__popup li {
+.new-project .ares-select__popup li {
     position: relative;
     white-space: nowrap;
     overflow: hidden;
     cursor: pointer;
     padding: 11px 0;
     font-size: 15px;
+}
+/*-------------/new-project------------*/
+
+/*-------------create------------*/
+.add-code{
+    margin-bottom: 191px;
+}
+.add-code__project li:before{
+    position: absolute;
+    top: 4px;
+    left: 1px;
+    width: 15px;
+    height: 15px;
+    background: url("../img/icons-status.png")0 14px;
+    content: "";
+}
+.add-code ul{
+    margin-bottom: 30px;
+}
+.add-code li{
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    line-height: 27px;
+}
+.add-code__successfully{
+    display: inline-block;
+    vertical-align: top;
+    width: 336px;
+    padding-top: 16px;
+    margin-right: 136px;
+    text-align: center;
+}
+.add-code__pic{
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 34px;
+    background: no-repeat center;
+}
+.add-code__successfully span{
+    display: block;
+    margin: 0 37px 25px;
+    line-height: 23px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.add-code__successfully p{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color:#333;
+    line-height: 24px;
+}
+.add-code__successfully a{
+    color: #18baea;
+    text-decoration: underline;
+}
+.add-code__successfully a:hover{
+    text-decoration: none;
+}
+.add-code__project{
+    display: inline-block;
+    vertical-align: top;
+    width: 476px;
+    text-align: left;
+}
+.add-code__project div{
+    padding: 11px 13px 2px;
+    margin: 9px 0 11px -22px;
+    border-radius: 3px;
+    border: 1px solid #d0d0d0;
+}
+.add-code__project p{
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #808080;
+    line-height: 20px;
+    border-radius: 3px;
+}
+.add-code__project ul li a.create__copy{
+    display: block;
+    color: #18baea;
+    margin: 0 0 30px -23px;
+}
+.add-code__project ul li a{
+    color: #333;
+    text-decoration: underline;
+}
+.add-code__project a:hover{
+
+    text-decoration: none;
 }
 /*-------------/create------------*/
 

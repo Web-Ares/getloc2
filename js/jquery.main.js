@@ -4,7 +4,7 @@ $(function(){
         Tabs($(this));
     });
 
-    $.each( $('.create__form'), function(){
+    $.each( $('.new-project__form'), function(){
         new FormValidation ( $(this) );
     } );
 
