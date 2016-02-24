@@ -144,7 +144,7 @@
                 <!-- create__form -->
                 <div class="create__form">
 
-                    <form method="get" action="php/form.php" novalidate>
+                    <form class="site__form" method="get" action="php/form.php" novalidate>
 
                         <fieldset>
                             <label for="name-project">Название проекта</label>
@@ -152,7 +152,7 @@
 
                             <!-- create__question -->
                             <div class="create__question">
-
+                                <span></span>
                                 <!-- create__question-text -->
                                 <div class="create__question-text">
                                     В случае если вы имеете файл локализации. Мы применим инструменты перевода только к загруженным файлам локализации. Ознакомьтесь с
@@ -172,11 +172,11 @@
 
                         <fieldset>
                             <label for="link-project">Ссылка на проект</label>
-                            <input type="text" id="link-project"/>
+                            <input type="text" id="link-project" required/>
 
                             <!-- create__question -->
                             <div class="create__question">
-
+                                <span></span>
                                 <!-- create__question-text -->
                                 <div class="create__question-text">
                                     В случае если вы имеете файл локализации. Мы применим инструменты перевода только к загруженным файлам локализации. Ознакомьтесь с
@@ -199,6 +199,7 @@
 
                             <!-- create__question -->
                             <div class="create__question">
+                                <span></span>
 
                                 <!-- create__question-text -->
                                 <div class="create__question-text">
@@ -256,7 +257,7 @@
 
                             <!-- create__question -->
                             <div class="create__question">
-
+                                <span></span>
                                 <!-- create__question-text -->
                                 <div class="create__question-text">
                                     В случае если вы имеете файл локализации. Мы применим инструменты перевода только к загруженным файлам локализации. Ознакомьтесь с
@@ -312,7 +313,7 @@
 
                         <!-- create__check -->
                         <fieldset class="create__check">
-                            <label><input type="checkbox" value="1" name="k"><span></span></label>
+                            <label><input type="checkbox" value="1" name="k" id="create__check-val"><span></span></label>
                             <span>У меня есть файл перевода (локализации) проекта</span>
                         </fieldset>
                         <!-- /create__check -->
@@ -396,3 +397,4 @@
 <script src="js/jquery.main.js"></script>
 </body>
 </html>
+
