@@ -2356,6 +2356,14 @@ a.social-ok{
 .create__check{
     margin-bottom: 37px;
 }
+.create .ares-select__popup li {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 11px 0;
+    font-size: 15px;
+}
 /*-------------/create------------*/
 
 /*-------------discount__language------------*/

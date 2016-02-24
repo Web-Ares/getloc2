@@ -426,7 +426,6 @@ var BtnLock = function(obj)  {
                     }
                 }
             });
-
         },
 
         _init = function() {
