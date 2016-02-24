@@ -118,8 +118,12 @@
             <h1 class="site__title title_create">Создайте проект</h1>
             <!-- site__title title_create -->
 
+
+
             <!-- create -->
             <div class="create">
+
+                <a class="create__skip" href="#">Пропустить работу помощника →</a>
 
                 <div class="create__pros">
 
@@ -145,18 +149,74 @@
                         <fieldset>
                             <label for="name-project">Название проекта</label>
                             <input type="text" id="name-project" required/>
+
+                            <!-- create__question -->
+                            <div class="create__question">
+
+                                <!-- create__question-text -->
+                                <div class="create__question-text">
+                                    В случае если вы имеете файл локализации. Мы применим инструменты перевода только к загруженным файлам локализации. Ознакомьтесь с
+
+                                    <!-- create__question-link -->
+                                    <a class="create__question-link" href="#">поддерживаемыми форматами</a>
+                                    <!-- /create__question-link -->
+
+                                    файлов локализаций.
+                                </div>
+                                <!-- /create__question-text -->
+
+                            </div>
+                            <!-- /create__question -->
+
                         </fieldset>
 
                         <fieldset>
                             <label for="link-project">Ссылка на проект</label>
                             <input type="text" id="link-project"/>
+
+                            <!-- create__question -->
+                            <div class="create__question">
+
+                                <!-- create__question-text -->
+                                <div class="create__question-text">
+                                    В случае если вы имеете файл локализации. Мы применим инструменты перевода только к загруженным файлам локализации. Ознакомьтесь с
+
+                                    <!-- create__question-link -->
+                                    <a class="create__question-link" href="#">поддерживаемыми форматами</a>
+                                    <!-- /create__question-link -->
+
+                                    файлов локализаций.
+                                </div>
+                                <!-- /create__question-text -->
+
+                            </div>
+                            <!-- /create__question -->
+
                         </fieldset>
 
                         <fieldset class="discount__language">
                             <label>Основной язык проекта</label>
 
+                            <!-- create__question -->
+                            <div class="create__question">
+
+                                <!-- create__question-text -->
+                                <div class="create__question-text">
+                                    В случае если вы имеете файл локализации. Мы применим инструменты перевода только к загруженным файлам локализации. Ознакомьтесь с
+
+                                    <!-- create__question-link -->
+                                    <a class="create__question-link" href="#">поддерживаемыми форматами</a>
+                                    <!-- /create__question-link -->
+
+                                    файлов локализаций.
+                                </div>
+                                <!-- /create__question-text -->
+
+                            </div>
+                            <!-- /create__question -->
+
                             <!-- options__selects-wrap -->
-                            <div class="discount__selects-language" data-language='{
+                            <div class="discount__selects-language " data-language='{
                                     "languages": [
                                         {
                                             "id": 1,
@@ -194,46 +254,26 @@
                         <fieldset class="discount__language">
                             <label>Перевести проект на язык</label>
 
-                            <!-- options__selects-wrap -->
-                            <div class="discount__selects-language" data-language='{
-                                    "languages": [
-                                        {
-                                            "id": 1,
-                                            "name": "Английский",
-                                            "src": "img/icons-en.png"
-                                        },
-                                        {
-                                            "id": 2,
-                                            "name": "Русский",
-                                            "src": "img/icons-en.png"
-                                        },
-                                        {
-                                            "id": 3,
-                                            "name": "Украинский",
-                                            "src": "img/icons-ua.png"
-                                        }
-                                    ]
-                                    }'>
+                            <!-- create__question -->
+                            <div class="create__question">
 
-                                <!-- discount__language-wrapper -->
-                                <div class="discount__language-wrapper">
+                                <!-- create__question-text -->
+                                <div class="create__question-text">
+                                    В случае если вы имеете файл локализации. Мы применим инструменты перевода только к загруженным файлам локализации. Ознакомьтесь с
 
-                                    <select name="lang_1" id="lang_2" required>
-                                        <option value="0">Выберите язык</option>
-                                    </select>
+                                    <!-- create__question-link -->
+                                    <a class="create__question-link" href="#">поддерживаемыми форматами</a>
+                                    <!-- /create__question-link -->
 
+                                    файлов локализаций.
                                 </div>
-                                <!-- /discount__language-wrapper -->
+                                <!-- /create__question-text -->
 
                             </div>
-                            <!-- /discount__selects-language -->
-
-                        </fieldset>
-
-                        <fieldset class="discount__language">
+                            <!-- /create__question -->
 
                             <!-- options__selects-wrap -->
-                            <div class="discount__selects-language" data-language='{
+                            <div class="discount__selects-language discount__selects-language_2" data-language='{
                                     "languages": [
                                         {
                                             "id": 1,
@@ -262,13 +302,20 @@
 
                                 </div>
                                 <!-- /discount__language-wrapper -->
+
                                 <a href="#" class="discount__languadge-add">Добавить направление перевода</a>
+
                             </div>
                             <!-- /discount__selects-language -->
 
                         </fieldset>
 
-
+                        <!-- create__check -->
+                        <fieldset class="create__check">
+                            <label><input type="checkbox" value="1" name="k"><span></span></label>
+                            <span>У меня есть файл перевода (локализации) проекта</span>
+                        </fieldset>
+                        <!-- /create__check -->
 
                         <!-- btn -->
                         <button class=" btn create__form-btn">

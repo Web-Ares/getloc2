@@ -170,6 +170,7 @@ input[type="search"]::-webkit-search-cancel-button {
     z-index: 2;
 }
 .site__wrap{
+    position: relative;
     width: 992px;
     padding: 0 20px;
     margin: 0 auto;
@@ -1987,9 +1988,13 @@ a.social-ok{
 
 /*-------------create------------*/
 .create{
+    margin-bottom: 108px;
+}
+.create_2{
     margin-bottom: 191px;
 }
-.create li:before{
+.create__pros li:before,
+.create__add li:before{
     position: absolute;
     top: 4px;
     left: 1px;
@@ -2006,25 +2011,34 @@ a.social-ok{
     padding-left: 24px;
     margin-bottom: 7px;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 400;
+    letter-spacing: -0.2px;
     line-height: 27px;
 }
 .create__pros{
     display: inline-block;
     vertical-align: top;
     width: 406px;
-    margin-right: 50px;
+    margin: 6px 67px 0 0;
 }
 .create__pic{
     width: 295px;
     height:187px;
     background: no-repeat center;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 }
 .create__form{
     display: inline-block;
     vertical-align: top;
-    width: 405px;
+    width: 426px;
+    margin-top: 4px;
+    padding-right: 20px;
+}
+.create__pros li{
+    margin-bottom: 5px;
+}
+.create__form fieldset{
+    position: relative;
 }
 .create__form-btn{
     display: block;
@@ -2121,6 +2135,10 @@ a.social-ok{
     transition: background .3s ease;
 }
 .discount__languadge-delete:after,
+.discount__languadge-delete:before{
+    background: #ff7a68;
+}
+.discount__languadge-delete:after,
 .discount__languadge-add:after {
     -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
@@ -2128,6 +2146,27 @@ a.social-ok{
 }
 .discount__language-wrapper {
     margin-bottom: 11px;
+}
+.discount__selects-language_2 {
+    position: relative;
+    margin-bottom: 35px;
+    padding: 0px 0 24px 0;
+}
+.discount__selects-language_2 .discount__language-wrapper {
+    position: relative;
+}
+.discount__selects-language_2 .discount__languadge-delete {
+    margin: 0;
+    position: absolute;
+    top: 22px;
+    right: -32px;
+}
+.discount__selects-language_2 .discount__languadge-add {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
 }
 .create__form.success{
     opacity: 0;
@@ -2217,5 +2256,110 @@ a.social-ok{
 .create__add a:hover{
 
     text-decoration: none;
+}
+.create__question{
+    position: absolute;
+    top: 30px;
+    right: -22px;
+    width: 16px;
+    height: 16px;
+    background: #d9d9d9 url("../img/question.png") no-repeat center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background .3s ease;
+    -webkit-transition: background .3s ease;
+}
+.create__question:hover{
+    background-color: #fcd130;
+}
+.create__question-text{
+    display: none;
+    position: absolute;
+    bottom: 26px;
+    right: -49px;
+    width: 281px;
+    background: #fff5d9;
+    padding: 14px 16px 12px 16px;
+    box-shadow: 0 0 10px #d3d0d0;
+    color: #ac977c;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+}
+.create__question-link{
+    color: #18baea;
+    text-decoration: underline;
+}
+.create__question-link:hover{
+    text-decoration: none;
+}
+.create__question-text:after{
+    position: absolute;
+    top: 100%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    pointer-events: none;
+    border-color: rgba(163, 163, 163, 0);
+    border-top-color: #fff5d9;
+    border-width: 7px 10px 0 7px;
+    right: 48px;
+}
+.create__question:hover .create__question-text{
+    display: block;
+}
+.create__skip{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    color: #b2b2b2;
+    text-decoration: underline;
+}
+.create__skip:hover{
+    text-decoration: none;
+}
+.create__check label {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    width: 340px;
+}
+.create__form .create__check input{
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+}
+.create__check label {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+}
+.create__check input[type="checkbox"] + span{
+    position: absolute;
+    z-index: 2;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    border: 1px solid #d0d0d0;
+    background: #fff;
+    cursor: pointer;
+}
+.create__check input[type="checkbox"]:checked + span{
+    background: #fff url(../img/icon-right.png) no-repeat center;
+}
+.create__check input[type="checkbox"]{
+    background-color: transparent;
+}
+.create__check>span{
+    padding-left:5px;
+    font-weight: 400;
+}
+.create__check{
+    margin-bottom: 37px;
 }
 /*-------------/discount__language------------*/
