@@ -34,9 +34,9 @@
 }
 .ares-select__item {
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     left: 0;
-    bottom: 0;
     right: 0;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -44,8 +44,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: left;
-    padding: 11px 27px 0 19px;
-
+    padding: 0 27px 0 19px;
 }
 .ares-select__item img {
     display: none;
@@ -109,6 +108,8 @@
 }
 .ares-select__popup ul {
     z-index: 1;
+    border-radius:3px;
+    border: 1px solid #d0d0d0;
 
 }
 .ares-select__popup li{
