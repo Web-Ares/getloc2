@@ -2560,10 +2560,10 @@ a.pages__page:hover{
     padding: 10px 0 10px;
 }
 .page__row_active .btn_3{
-    background: #13afdd;
+    background: #18baea;
 }
 .page__row_active .btn_3:hover{
-    background: #18b9e9;
+    background: #22c6f6;
     border-radius: 5px;
 }
 .btn_3 span{
@@ -2578,7 +2578,7 @@ a.pages__page:hover{
     border-radius: 5px;
 }
 .btn_3 span:last-child:hover{
-    background: #18baea;
+    background: #22c6f6;
 }
 .btn_3 span:first-child{
     border-radius: 5px;
