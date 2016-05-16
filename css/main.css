@@ -2593,6 +2593,7 @@ a.pages__page:hover{
 .page__row_active .btn_3 span:first-child{
     display: none;
 }
+
 .btn_3{
     width: 86px;
     height: 27px;
